@@ -239,8 +239,6 @@ export function createGameWindowManager({
                     }
 
                     const serverEndpoint = new URL(server.endpoint);
-                    console.log(next, serverEndpoint)
-
                     if (next.origin !== origin) {
                         // Open in browser for safety
                         shell.openExternal(next.href)
